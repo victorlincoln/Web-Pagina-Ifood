@@ -1,0 +1,18 @@
+// Variavel
+$cor1: #ea1d2c;
+$cor2: #6e6e6e;
+$cor3: #f2f2f2;
+$cor4: #fff;
+
+// Funcao
+@mixin texto($size, $color: $cor2) {
+  font: $size "Roboto", sans-serif;
+  color: $color;
+}
+
+// Import
+@import "reset";
+@import "header";
+@import "header-media";
+
+// Seu código css aqui

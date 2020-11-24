@@ -1,0 +1,63 @@
+header {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .conteudo {
+    width: 700px;
+    text-align: center;
+  }
+
+  h2 {
+    @include texto(60px, $cor1);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    @include texto(30px);
+  }
+
+  .botao-feedback {
+    transform: rotate(270deg);
+    position: fixed;
+    right: -32px;
+    background: $cor1;
+    @include texto(14px, $cor4);
+    padding: 16px 22px;
+
+    &:hover {
+      right: -28px;
+    }
+  }
+
+  .ícone-lata {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+  }
+  .ícone-panela {
+    height: 400px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .ícone-compras {
+    display: none;
+    height: 240px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .ícone-compras {
+    display: none;
+    height: 140px;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+  }
+}
